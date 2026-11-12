@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Our Tours – Al Tahadi Travel & Tours</title>
+  <meta name="description" content="Holiday packages, day tours and transportation services from Al Tahadi Travel & Tours." />
+</head>
+<body data-page="tours">
+  <div id="site-header"></div>
+
+  <section class="page-hero" data-bg="desert">
+    <div class="container">
+      <p class="crumbs"><a href="index.html">Home</a> / Tours</p>
+      <h1 class="h-xl">Our tours</h1>
+      <p>Holiday packages, day tours and transportation — carefully picked, with a best price guarantee.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:40px">
+    <div class="container">
+      <div class="filters">
+        <div class="chips">
+          <button class="chip" data-type="all">All</button>
+          <button class="chip" data-type="package">Holiday packages</button>
+          <button class="chip" data-type="day">Day tours</button>
+          <button class="chip" data-type="transport">Transportation</button>
+        </div>
+        <div class="filters__right">
+          <select class="field-inline" id="fDest" aria-label="Destination"></select>
+          <input class="field-inline" id="fSearch" type="search" placeholder="Search tours…" aria-label="Search tours" />
+        </div>
+      </div>
+      <p class="results-count" id="toursCount" style="margin-bottom:24px"></p>
+      <div class="tours-grid" id="toursGrid"></div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

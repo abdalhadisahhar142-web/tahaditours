@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Contact – Al Tahadi Travel & Tours</title>
+  <meta name="description" content="Contact Al Tahadi Travel & Tours in Damascus, Syria. Phone +963-11-3338769, info@tahaditours.com." />
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+
+  <section class="page-hero" data-bg="plane">
+    <div class="container">
+      <p class="crumbs"><a href="index.html">Home</a> / Contact</p>
+      <h1 class="h-xl">Contact us</h1>
+      <p>Tell us where you want to go — we'll take care of the rest.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:40px">
+    <div class="container">
+      <div class="contact-cards" id="contactCards"></div>
+
+      <div class="contact-layout">
+        <div class="reveal">
+          <span class="eyebrow">Leave us your info</span>
+          <h2 class="h-lg" style="margin-bottom:24px">Plan your next journey with us</h2>
+          <p>Whether it's a ready-made package, a city tour, a flight or a transfer, send us a message and our team will get back to you with options and prices.</p>
+          <div class="contact-social" id="contactSocial"></div>
+        </div>
+
+        <form class="form form--2 reveal" data-mail="Website enquiry">
+          <div class="field"><label for="cName">Full name</label><input id="cName" name="Name" required /></div>
+          <div class="field"><label for="cPhone">Phone / WhatsApp</label><input id="cPhone" name="Phone" type="tel" required /></div>
+          <div class="field"><label for="cEmail">E-mail</label><input id="cEmail" name="Email" type="email" /></div>
+          <div class="field"><label for="cSubject">Subject</label>
+            <select id="cSubject" name="Subject">
+              <option>Holiday package</option><option>Day tour</option><option>Flight tickets</option>
+              <option>Hotel booking</option><option>Transportation</option><option>Group / incentive</option>
+              <option>Partnership</option><option>Other</option>
+            </select></div>
+          <div class="field full"><label for="cMessage">Message</label><textarea id="cMessage" name="Message" required></textarea></div>
+          <div class="full">
+            <button class="btn btn--solid">Send message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h15M14 6l6 6-6 6"/></svg></button>
+            <p class="form__msg" style="margin-top:12px"></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="partner reveal" id="partner">
+        <div>
+          <span class="eyebrow">Be our partner · Work with us</span>
+          <h3 class="h-md">Hotels, guides, agencies and talent — let's grow together.</h3>
+        </div>
+        <a href="mailto:info@tahaditours.com?subject=Partnership" class="btn">Get in touch
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h15M14 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="map reveal">
+        <iframe title="Al Tahadi location – Damascus" loading="lazy" src="https://www.google.com/maps?q=Damascus,Syria&z=12&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
